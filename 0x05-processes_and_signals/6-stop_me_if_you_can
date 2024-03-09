@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# This script stops a script file from processing
+
+pkill -f ./4-to_infinity_and_beyond
