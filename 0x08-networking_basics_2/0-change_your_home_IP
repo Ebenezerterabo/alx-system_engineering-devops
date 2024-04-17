@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # check if file exists
 FILE="/etc/hosts"
 
