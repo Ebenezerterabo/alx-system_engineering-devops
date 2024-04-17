@@ -1,0 +1,12 @@
+#!/usr/bin/bash
+
+# check if file exists
+FILE="/etc/hosts"
+
+if [ ! -f $FILE ]; then
+    echo "Error: $FILE not found"
+fi
+
+#configure the server (resolves)
+echo "127.0.0.2    localhost" > $FILE
+echo "8.8.8.8    facebook.com" >> $FILE
