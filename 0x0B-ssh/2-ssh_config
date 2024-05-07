@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# A bash script that configures a file for local SSH client
+
+Host 54.162.46.100
+    IdentityFile ~/.ssh/id_rsa
+    PasswordAuthentication no
