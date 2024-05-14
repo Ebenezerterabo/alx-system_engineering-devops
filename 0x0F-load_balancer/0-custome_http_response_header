@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 # Configure web-02 server
 
 # shellcheck disable SC2154
