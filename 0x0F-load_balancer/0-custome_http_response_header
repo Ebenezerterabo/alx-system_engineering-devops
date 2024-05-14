@@ -1,6 +1,7 @@
 #!/bin/env bash
 # Configure web-02 server
 
+# shellcheck disable SC2154
 # update and install nginx 
 sudo apt-get update && sudo apt-get install nginx
 # Allow listening on port 80
