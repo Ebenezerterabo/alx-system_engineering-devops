@@ -1,0 +1,13 @@
+#!/bin/env bash
+# Configure web-02 server
+
+# update and install nginx 
+sudo apt-get update && sudo apt-get install nginx
+# Allow listening on port 80
+ufw allow 'Nginx HTTP'
+# Default homepage
+echo "Hello world!" | sudo tee /var/html/index.html
+# configure http response header
+echo "X-Served-By: $HOSTNAME;" > /etc/nginx/conf.d/http_respond_header.conf
+# Restart the server
+sudo service restart
