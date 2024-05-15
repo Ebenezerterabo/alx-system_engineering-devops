@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# A script to install HAproxy on my server lb-01
+
+#Update the server
+sudo apt-get update
+# Install HAproxy
+sudo apt-get install haproxy -y
