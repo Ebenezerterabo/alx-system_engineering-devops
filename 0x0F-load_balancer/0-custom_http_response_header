@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Configure web-02 server
+
+# shellcheck disable SC2154
+# update and install nginx 
+sudo apt-get update && sudo apt-get install nginx -y
+# Allow listening on port 80
+sudo ufw allow 'Nginx HTTP'
+# Default homepage
+echo "Hello world!" | sudo tee /var/www/html/index.html
+# configure http response header
+echo "add_header X-Served-By $HOSTNAME;" | sudo tee -a /etc/nginx/sites-available/default
+# Restart the server
+sudo service nginx restart
