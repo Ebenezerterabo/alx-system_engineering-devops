@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+# A script that displays information about subdomains of domain name
+
+display_subdomain()
+{
+    local ip_adr=$(dig $2.$1 +short)
+    local A_record=$(dig $2.$1 | awk '/^;; ANSWER SECTION:/{getline; print $4}')
+    echo "The subdomain $2 is a $A_record record and points to $ip_adr"
+}
+
+domain=$1
+subdomain=$2
+
+if [ $# -eq 1 ]; then
+    for sub_d in "www" "lb-01" "web-01" "web-02"; do
+        display_subdomain $domain $sub_d
+    done
+else
+    display_subdomain $domain $subdomain
+fi
+
