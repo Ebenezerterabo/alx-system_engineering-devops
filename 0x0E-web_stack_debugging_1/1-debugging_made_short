@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 # Making Task #0 script short and sweet
-
-# Override the existing symbolic linked files
 ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
-# Restart nginx to save configuration
 service nginx restart
+kill "$(cat /var/run/nginx.pid)"
