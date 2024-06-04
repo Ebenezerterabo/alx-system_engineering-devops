@@ -3,8 +3,8 @@
 A script to gather data from an API(REST API)
 """
 
-from sys import argv
 import requests
+from sys import argv
 
 
 def main():
