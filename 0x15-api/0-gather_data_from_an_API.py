@@ -9,13 +9,8 @@ from sys import argv
 
 def main():
     """main function"""
-    try:
-        emp_id = int(argv[1])
-    except Exception:
-        return
-
     # get employee id
-    emp_id = argv[1]
+    emp_id = int(argv[1])
     # Fetch employee data
     emp_url = f"https://jsonplaceholder.typicode.com/users/{emp_id}"
     emp_response = requests.get(emp_url)
@@ -36,5 +31,5 @@ def main():
     for task in completed_tasks:
         print("\t" + task.get("title"))
 
-    if __name__ == "__main__":
-        main()
+if __name__ == "__main__":
+    main()
