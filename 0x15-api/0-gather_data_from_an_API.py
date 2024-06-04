@@ -4,6 +4,7 @@
 from sys import argv
 import requests
 
+
 # get employee id
 emp_id = argv[1]
 # Fetch employee data
