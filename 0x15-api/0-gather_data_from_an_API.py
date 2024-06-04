@@ -29,7 +29,7 @@ def main():
           f"({number_of_completed_tasks}/{total_tasks}):")
     # print completed tasks titles
     for task in completed_tasks:
-        print("\t" + task.get("title"))
+        print("\t " + task.get("title"))
 
 
 if __name__ == "__main__":
