@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-A script to gather data from an API(REST API)
+A script to gather data from an API(REST API) and export to CSV
 """
 
 import csv
