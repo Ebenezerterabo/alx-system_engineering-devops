@@ -1,10 +1,8 @@
 # Postmortem  
 ## Incident Report ```Web_stack debugging #3```
-The following is the incident from an internal server error that ocurred on 20th June 2024. We realized this issue rendered the web server unavailable and out of reach to users and we apologize to everyone who was affected.  
-
-
 ![Screenshot of the incident](https://media.licdn.com/dms/image/D4D12AQHMnMxOKwwZ9g/article-cover_image-shrink_600_2000/0/1715336195771?e=2147483647&v=beta&t=XmfllkYCWoAsrrYR83H9dUs5f0G5xF0sTXZ17nQwjOY)
 
+The following is the incident from an internal server error that ocurred on 20th June 2024. We realized this issue rendered the web server unavailable and out of reach to users and we apologize to everyone who was affected.  
 
 ### Issue Summary
 From 08:00 AM GMT, requests to fetch data from the web server resulted in 500 error response messages which at its highest traffic affected 100% of users. The root cause of this server downtime was an invalid configuration change which exposed a bug in the software configuration settings known as WordPress.
