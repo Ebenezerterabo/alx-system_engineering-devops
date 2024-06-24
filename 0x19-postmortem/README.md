@@ -3,7 +3,7 @@
 The following is the incident from an internal server error that ocurred on 20th June 2024. We realized this issue rendered the web server unavailable and out of reach to users and we apologize to everyone who was affected.  
 
 
-![Screenshot of the incident](https://www.google.com/url?sa=i&url=https%3A%2F%2Fdatafloq.com%2Fread%2Fsoftware-development-project-postmortem%2F&psig=AOvVaw1uPOtcmcm3CM49b914Xxw8&ust=1719317952243000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNias9yc9IYDFQAAAAAdAAAAABAE)
+![Screenshot of the incident](https://media.licdn.com/dms/image/D4D12AQHMnMxOKwwZ9g/article-cover_image-shrink_600_2000/0/1715336195771?e=2147483647&v=beta&t=XmfllkYCWoAsrrYR83H9dUs5f0G5xF0sTXZ17nQwjOY)
 
 
 ### Issue Summary
